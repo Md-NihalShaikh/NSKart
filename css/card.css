@@ -1,0 +1,116 @@
+.slide-container{
+    max-width: 1140px;
+    width: 100%;
+    padding: 40px 0;
+}
+.slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.card {
+    position: relative;
+    width: 320px;
+    height: 420px;
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-brand);
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+.card:hover::before{
+    top: -70%;
+    transform: skewY(390deg);
+}
+
+.card .imgBx {
+    position: relative;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+.card .imgBx img {
+    max-width: 100%;
+    transition: 0.5s;
+}
+.card:hover .imgBx img{
+    max-width: 80%;
+}
+.card .contentBx{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+.card .contentBx h3{
+    font-size: 18px;
+    color: var(--color-brand);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16 px;
+}
+.card .contentBx .price{
+    font-size: 24px;
+    color: #122936;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.card .contentBx .cart {
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: var(--white);
+    text-decoration: none;
+    background: var(--color-brand);
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.card:hover .contentBx .cart {
+    top: 0;
+    opacity: 1;
+}
+
+.swiper-navBtn{
+    color: var(--lt-brand);
+    transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+    color: var(--color-brand);
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 35px;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-pagination-bullet{
+    background-color: var(--lt-brand);
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--color-brand);
+}

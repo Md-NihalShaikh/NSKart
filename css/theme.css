@@ -1,0 +1,99 @@
+@import url(./header.css);
+@import url(./product-menu.css);
+@import url(./slider-main.css);
+@import url(./card.css);
+@import url(./footer.css);
+
+:root {
+    --color-brand : #2874f0;
+    --white: #fff;
+    --lt-brand:#6E93f7;
+    --black: #24292d;
+    --light-bg: #F0F8FF;
+    --color-header : #f0f0f0;
+    --z-index--catnav: 6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    display: block;
+    font-size: 62.5%;
+}
+
+
+body {
+    display: block;
+    font-size: 1.4rem;
+    background-color: #d4dde7cb;
+    color: #212121;
+    line-height: 1.4;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: Arial, sans-serif;
+    letter-spacing: -.2px;
+}
+
+#container {
+    height: 100%;
+}
+
+div {
+    display: block;
+}
+
+header {
+    padding-bottom: 5.6rem;
+    min-width: 97.8rem;
+    position: relative;
+}
+
+a,
+img {
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+h1{
+    color: #122936;
+    text-transform: uppercase;
+    text-align: center;
+}
+.brand {
+    color: var(--color-brand);
+}
+.bg--white{
+    background: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.2px);
+    border-radius: 1rem;
+    z-index: 1;
+}
+.margin {
+    margin: 1rem 0 ;
+}
+
+.hover:hover{
+    color: var(--lt-brand);
+    cursor: pointer;
+}

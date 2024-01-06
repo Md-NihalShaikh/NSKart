@@ -1,0 +1,51 @@
+footer {
+    width: 100%;
+}
+.foot--pre1-cont {
+    margin: 16px;
+    color: #666;
+    padding: 2rem;
+    font-size: 1.1rem;
+}
+body .foot--pre1-cont .p-foothead {
+    font-weight: 600;
+    margin: 2rem 0 1.5rem 0;
+    font-size: 1.5rem;
+
+}
+body .foot--pre1-cont .p-foothead--big{
+    font-size: 1.7rem;
+    margin: 2rem 0 1.5rem 0;
+}
+.vr--gap{
+    display: block;
+    height: 1.5rem;
+}
+.foot--main-cont{
+    margin: 16px 16px 0 16px;
+    color: var(--white);
+    padding: 2rem;
+    font-size: 1.1rem;
+    background: rgb(19, 21, 37);
+    border-radius: 20px 20px 0 0;
+}
+.footer-cont{
+    margin: 1rem 4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    justify-content: flex-start;
+}
+.footer-section {
+    display: block;
+}
+
+.mail-us{
+    border-left: 1px solid var(--color-brand);
+    padding: 0 4rem;
+    height: fit-content;
+}
+.copy{
+    color: var(--white);
+    font-size: 1.2rem;
+}
